@@ -60,6 +60,7 @@ nav ul {
 
 #logo {
   height: 28px;
+  margin-right: 16px;
 }
 
 #sloganArea {
@@ -307,7 +308,7 @@ footer ul {
 }
 
 /* Small Screens */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   header {
     padding-bottom: 140px;
     flex-direction: row;
@@ -329,6 +330,10 @@ footer ul {
     object-position: left center;
   }
 
+  #sloganArea{
+    align-items: flex-start;
+  }
+
   #sloganArea > h1 {
     text-align: left;
     font-size: 80px;
@@ -337,6 +342,7 @@ footer ul {
 
   #sloganArea > p {
     font-size: 26px;
+    text-align: left;
   }
 
   #statisticsSection > ul {
@@ -371,5 +377,111 @@ footer ul {
 
   #copyrightArea {
     text-align: left;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 1024px) {
+  #menuButton {
+    display: none;
+  }
+
+  #signInArea {
+    display: block;
+  }
+
+  #rightSideMenuArea {
+    display: flex;
+    align-items: center;
+  }
+
+  #rightSideMenuArea > ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+  }
+
+  #rightSideMenuArea > ul > li {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    padding: 0 16px;
+  }
+
+  #rightSideMenuArea > ul > li > a {
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration: none;
+  }
+
+  #signInMenuItem a {
+    color: #FFFFFF;
+  }
+
+  #tryForFreeMenuItem {
+    border-radius: 2px;
+    background-color: #FFFFFF;
+  }
+
+  #tryForFreeMenuItem a {
+    text-transform: uppercase;
+    color: #682765;
+  }
+
+  #mainMenuArea {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  #mainMenuList {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+  }
+
+  #mainMenuList a {
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  #salesSection {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #salesSection > h3 {
+    font-size: 40px;
+    flex: 0 0 100%;
+  }
+
+  #salesSection button {
+    margin: 0;
+    width: 200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #loginArea {
+    flex-direction: row;
+  }
+
+  #loginArea button {
+    width: 50%;
+  }
+
+  #sloganArea {
+    width: 50%;
+  }
+
+  #productImageArea {
+    width: 50%;
+  }
+
+  #productImageArea {
+    height: auto;
   }
 }
